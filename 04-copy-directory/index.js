@@ -4,7 +4,6 @@ console.log('first');
 
 fs.access(path.join(__dirname, 'files-copy'),(err)=>{
   if(err){
-
     fs.mkdir(path.join(__dirname, 'files-copy'), {recursive: true}, (err)=>{
       if(err){console.log(err);}
       console.log('The folder are created (no)');
